@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Inmobiliaria Bienes Raices</title>
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png"> 
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="./assets/plugins/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
 </head>
 <body>
     <header>
         <div class="container header">
-            <img class="logo" src="./img/logo.png" alt="Bienes Raices Inmobiliaria">
+            <img class="logo" src="./assets/img/logo.png" alt="Bienes Raices Inmobiliaria">
 
             
                 <ul class="menu">
-                    <li class="menu__item"><a href="#">Nosotros</a></li>
-                    <li class="menu__item"><a href="#">Casas</a></li>
-                    <li class="menu__item"><a href="#">Contacto</a></li>
+                    <li class="menu__item"><a href="#about">Nosotros</a></li>
+                    <li class="menu__item"><a href="#sales">Casas</a></li>
+                    <li class="menu__item"><a href="#blog">Blog</a></li>
+                    <li class="menu__item"><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
         
     </header>
-    <section class="about container">
+    <section id="about" class="about">
         <div class="about__image">
-            <img src="./img/nosotros.jpg" alt="Sobre Raices Inmobiliaria">
+            <img src="./assets/img/nosotros.jpg" alt="Sobre Raices Inmobiliaria">
         </div>
         <div class="about__content">
             <div>
@@ -40,16 +46,16 @@
         </div>
     </section>
     <section id="sales">
-        <div class="sales-title container">
+        <div class="main-title container">
             <hr class="border">
-            <h1 class="sales-title__title">Nuestras casas a la venta</h1>
+            <h1 class="main-title__title">Nuestras casas a la venta</h1>
             
-            <p class="sales-title__slogan">Las mejores construcciones al mejor precio</p>
+            <p class="main-title__slogan">Las mejores construcciones al mejor precio</p>
         </div>
         <div class="sales container">
             <div class="item item-1 featured">
                 <div class="item__img">
-                    <img src="./img/casa1.jpg" alt="casa 1">
+                    <img src="./assets/img/casa1.jpg" alt="casa 1">
                 </div>
                 <div class="info">
                     <h2 class="title">Casa 1</h2>
@@ -62,7 +68,7 @@
             </div>
             <div class="item item-2">
                 <div class="item__img">
-                    <img src="./img/casa2.jpg" alt="casa 1">
+                    <img src="./assets/img/casa2.jpg" alt="casa 1">
                 </div>
                 <div class="info">
                     <h2 class="title">Casa 2</h2>
@@ -74,7 +80,7 @@
             </div>
             <div class="item item-3">
                 <div class="item__img">
-                    <img src="./img/casa3.jpg" alt="casa 1">
+                    <img src="./assets/img/casa3.jpg" alt="casa 1">
                 </div>
                 <div class="info">
                     <h2 class="title">Casa 3</h2>
@@ -86,7 +92,7 @@
             </div>
             <div class="item item-4">
                 <div class="item__img">
-                    <img src="./img/casa4.jpg" alt="casa 1">
+                    <img src="./assets/img/casa4.jpg" alt="casa 1">
                 </div>
                 <div class="info">
                     <h2 class="title">Casa 4</h2>
@@ -98,7 +104,7 @@
             </div>
             <div class="item item-5">
                 <div class="item__img">
-                    <img src="./img/casa5.jpg" alt="casa 1">
+                    <img src="./assets/img/casa5.jpg" alt="casa 1">
                 </div>
                 <div class="info">
                     <h2 class="title">Casa 5</h2>
@@ -111,20 +117,142 @@
         </div>
 
     </section>
+    <section id="newsletter">
+        <div class="container newsletter">
+            <h1 class="newsletter__title">Newsletter</h1>
+            <p class="newsletter__subtitle">Recibe todas las novedades del sector inmobiliario</p>
+            <form class="newsletter-form" action="">
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input class="form-group__input" type="email" name="email" placeholder="Introduce tu email">
+                    <button class="btn-default">Suscribirse</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="main-title container">
+            <hr class="border">
+            <h1 class="main-title__title">Blog</h1>
+            
+            <p class="main-title__slogan">Entérate de los mejores trucos para decorar tu casa</p>
+        </div>
+        <div class="blog container">
+            <div class="slider slider-plug">
+                <div class="item">
+                    <div class="item__img">
+                        <img src="./assets/img/casa3.jpg" alt="casa 1">
+                    </div>
+                    <div class="info">
+                        <h2 class="title">Casa 3</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit pariatur est suscipit corrupti sapiente natus ducimus animi autem quo repellendus, nesciunt, distinctio fuga. Mollitia reprehenderit ullam voluptas optio. Aperiam, sint.</p>
+                        
+                        <a href="#" class="btn-default">Leer más</a>
+    
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="./assets/img/casa2.jpg" alt="casa 1">
+                    </div>
+                    <div class="info">
+                        <h2 class="title">Casa 3</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit pariatur est suscipit corrupti sapiente natus ducimus animi autem quo repellendus, nesciunt, distinctio fuga. Mollitia reprehenderit ullam voluptas optio. Aperiam, sint.</p>
+                        
+                        <a href="#" class="btn-default">Leer más</a>
+    
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="./assets/img/casa4.jpg" alt="casa 1">
+                    </div>
+                    <div class="info">
+                        <h2 class="title">Casa 3</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit pariatur est suscipit corrupti sapiente natus ducimus animi autem quo repellendus, nesciunt, distinctio fuga. Mollitia reprehenderit ullam voluptas optio. Aperiam, sint.</p>
+                        
+                        <a href="#" class="btn-default">Leer más</a>
+    
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="./assets/img/casa5.jpg" alt="casa 1">
+                    </div>
+                    <div class="info">
+                        <h2 class="title">Casa 3</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit pariatur est suscipit corrupti sapiente natus ducimus animi autem quo repellendus, nesciunt, distinctio fuga. Mollitia reprehenderit ullam voluptas optio. Aperiam, sint.</p>
+                        
+                        <a href="#" class="btn-default">Leer más</a>
+    
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="./assets/img/casa3.jpg" alt="casa 1">
+                    </div>
+                    <div class="info">
+                        <h2 class="title">Casa 3</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit pariatur est suscipit corrupti sapiente natus ducimus animi autem quo repellendus, nesciunt, distinctio fuga. Mollitia reprehenderit ullam voluptas optio. Aperiam, sint.</p>
+                        
+                        <a href="#" class="btn-default">Leer más</a>
+    
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item__img">
+                        <img src="./assets/img/casa3.jpg" alt="casa 1">
+                    </div>
+                    <div class="info">
+                        <h2 class="title">Casa 3</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit pariatur est suscipit corrupti sapiente natus ducimus animi autem quo repellendus, nesciunt, distinctio fuga. Mollitia reprehenderit ullam voluptas optio. Aperiam, sint.</p>
+                        
+                        <a href="#" class="btn-default">Leer más</a>
+    
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section id="contact">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197294.47340645303!2d-0.5015954687885393!3d39.40770125212401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia!5e0!3m2!1ses!2ses!4v1603811101492!5m2!1ses!2ses" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="container contact-info">
+            <div class="address">
+                <i class="fas fa-map-marker-alt"></i><p>lorem ipsum</p>
+            </div>
+            <div class="email">
+                <i class="fas fa-envelope"></i><a href="mailto:email@email.com">email@email.com</a>
+            </div>
+            <div class="phone">
+                <i class="fas fa-phone"></i><p>961952222</p>
+            </div>
+
+        </div>
+
+    </section>
     <footer>
         <div class="main-footer container">
             <div class="logo">
-                <img src="./img/logo.png" alt="Inmobiliaria Raices">
+                <img src="./assets/img/logo.png" alt="Inmobiliaria Raices">
             </div>
             <div>
                 <ul class="menu">
-                    <li class="menu__item"><a href="#">Nosotros</a></li>
-                    <li class="menu__item"><a href="#">Casas</a></li>
-                    <li class="menu__item"><a href="#">Contacto</a></li>
+                    <li class="menu__item"><a href="#about">Nosotros</a></li>
+                    <li class="menu__item"><a href="#sales">Casas</a></li>
+                    <li class="menu__item"><a href="#blog">Blog</a></li>
+                    <li class="menu__item"><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
-            <div class="map">
+            <!-- <div class="map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197294.47340645303!2d-0.5015954687885393!3d39.40770125212401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia!5e0!3m2!1ses!2ses!4v1603811101492!5m2!1ses!2ses" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div> -->
+            <div class="socials">
+                <a href="http://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter-square"></i></a>
+                <a href="http://www.facebook.com"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.facebook.com"><i class="fab fa-pinterest-square"></i></a>
+                <a href="http://www.facebook.com"><i class="fab fa-youtube-square"></i></a>
+                
             </div>
         </div>
         <div class="copyright">
@@ -132,5 +260,10 @@
         </div>
     </footer>
     
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="./assets/plugins/slick/slick.js"></script>
+
+    <script src="./assets/js/custom.js"></script>
 </body>
 </html>
