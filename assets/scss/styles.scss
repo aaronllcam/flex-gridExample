@@ -389,3 +389,14 @@ footer{
     background: #555;
     color: #fff;
   }
+  #preload{
+      position: fixed;
+      z-index: 1000;
+      width: 100%;
+      height: 100%;
+      background-color: #e9efef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }

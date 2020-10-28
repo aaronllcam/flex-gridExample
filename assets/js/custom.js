@@ -1,4 +1,10 @@
 /* custom */
+
+  /* Preload */
+window.onload = function(){
+    $('#preload').fadeOut();
+}
+  /* End preload */
 $(document).ready(function(){
     $('.slider-plug').slick({
         slidesToShow: 3,
@@ -11,3 +17,5 @@ $(document).ready(function(){
 $(function(){
     $.scrollUp();
   });
+
+
