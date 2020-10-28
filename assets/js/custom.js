@@ -8,3 +8,6 @@ $(document).ready(function(){
         pauseOnHover: true
     });
 });
+$(function(){
+    $.scrollUp();
+  });

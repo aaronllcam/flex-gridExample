@@ -4,7 +4,7 @@ const autoprefixer = require('gulp-autoprefixer');
 
 function css(){
     return gulp
-            .src('./scss/styles.scss')
+            .src('./assets/scss/styles.scss')
             .pipe(autoprefixer({
                 overrideBrowsersList: ['last 2 versions'],
                 cascade: false
@@ -12,12 +12,12 @@ function css(){
             .pipe(sass({
                 outputStyle: "expanded"
             }))
-            .pipe(gulp.dest('./css'));
+            .pipe(gulp.dest('./assets/css'));
 }
 
 //vamos a realizar un watch para gulp y cada vez que guardemos carge los cambios directamnete.
 function watchFiles(){
-    gulp.watch('./scss/*.scss', css);
+    gulp.watch('./assets/scss/*.scss', css);
     gulp.watch('index.html');
 }
 
