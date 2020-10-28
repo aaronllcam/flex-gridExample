@@ -561,9 +561,9 @@ footer .menu__item:last-child {
 #scrollUp {
   bottom: 20px;
   right: 20px;
-  padding: 10px 20px;
-  background: #555;
-  color: #fff;
+  width: 50px;
+  height: 50px;
+  background: url("../img/arrow-up.jpg");
 }
 
 #preload {

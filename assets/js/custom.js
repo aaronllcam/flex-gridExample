@@ -5,6 +5,7 @@ window.onload = function(){
     $('#preload').fadeOut();
 }
   /* End preload */
+  /* slider slick */
 $(document).ready(function(){
     $('.slider-plug').slick({
         slidesToShow: 3,
@@ -14,8 +15,13 @@ $(document).ready(function(){
         pauseOnHover: true
     });
 });
+/* end slider slick */
 $(function(){
-    $.scrollUp();
+    $.scrollUp({
+      scrollText:"",
+      scrollSpeed: 1000,
+      easingtype: "easeOutQuint"
+    });
   });
 
 
